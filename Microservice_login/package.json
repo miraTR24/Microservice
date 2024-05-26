@@ -1,0 +1,22 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "description": "microservice user from MeloMeet App",
+  "main": "index.js",
+  "scripts": {
+    "test": "usertest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ad3344108/MeloMeet.git/user"
+  },
+  "keywords": [
+    "siuuuuu"
+  ],
+  "author": "Malvina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ad3344108/MeloMeet/user/issues"
+  },
+  "homepage": "https://gitlab.com/ad3344108/MeloMeet/user#readme"
+}

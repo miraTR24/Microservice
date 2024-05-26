@@ -1,0 +1,60 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Admin section styles */
+.admin-section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* User section styles */
+.user-section {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Token info styles */
+.token-info {
+    margin-top: 20px;
+}
+
+.token {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Welcome message styles */
+.welcome-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}

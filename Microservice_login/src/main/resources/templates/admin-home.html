@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - MeloMeet</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ajoutez votre fichier CSS ici -->
+</head>
+<body>
+<header>
+    <h1>Welcome Admin!</h1>
+</header>
+<main>
+    <section class="admin-section">
+        <h2>Admin Dashboard</h2>
+        <p th:text="'Welcome, ' + ${username} + '!'" class="welcome-message"></p>
+        <div class="token-info">
+            <p th:text="'Admin Token: ' + ${token}" class="token"></p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
