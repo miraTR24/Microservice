@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification Réussie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #1DB954; /* Vert Spotify */
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Authentification Réussie</h1>
+    <p>Bienvenue ! Vous vous êtes connecté avec succès à Spotify.</p>
+    <p>Vous pouvez maintenant commencer à utiliser les fonctionnalités de notre application.</p>
+    <button id="fetchPlaylists">Récupérer mes playlists</button>
+    <div id="playlists"></div>
+
+    <script>
+        document.getElementById('fetchPlaylists').addEventListener('click', async () => {
+            try {
+                const response = await fetch('/playlists');
+                const playlists = await response.json();
+                const playlistsDiv = document.getElementById('playlists');
+                playlistsDiv.innerHTML = '<h2>Mes Playlists</h2>';
+
+                playlists.items.forEach(playlist => {
+                    playlistsDiv.innerHTML += `<p>${playlist.name}</p>`;
+                });
+            } catch (error) {
+                console.error('Error fetching playlists:', error);
+            }
+        });
+    </script>
+</body>
+</html>
